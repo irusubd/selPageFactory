@@ -21,12 +21,10 @@ public class LoginPage extends SeleniumWrappers{
 	public String username = ReadPropertiesFile.credentials.getProperty("user");
 	public String password = ReadPropertiesFile.credentials.getProperty("pass");
 
-	@FindBy(id = "log")
-	public WebElement usernameField;
-	@FindBy(id = "password")
-	public WebElement passwordField;
-	@FindBy(css = "input[class='submit_button']")
-	public WebElement submitButton;
+	@FindBy(id = "log") public WebElement usernameField;
+	@FindBy(id = "password") public WebElement passwordField;
+	@FindBy(css = "input[class='submit_button']") public WebElement submitButton;
+	@FindBy(css = "li[class='menu_user_login']") public WebElement loginPopUp;
 
 	public void loginInApp(String username, String password) {
 //		usernameField.sendKeys(username);
