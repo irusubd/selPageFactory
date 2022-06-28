@@ -1,5 +1,6 @@
 package utils;
 
+import pages.AudioPostPage;
 import pages.ContactsPage;
 import pages.LoginPage;
 import pages.NavMenuPage;
@@ -15,6 +16,7 @@ public class BasePage extends BaseTest {
 	public ContactsPage contactsPage = new ContactsPage(driver);
 	public ShopPage shopPage = new ShopPage(driver);
 	public ProductPage productPage = new ProductPage(driver);
+	public AudioPostPage audioPostPage = new AudioPostPage(driver);
 	
 	public SeleniumWrappers se = new SeleniumWrappers(driver);
 

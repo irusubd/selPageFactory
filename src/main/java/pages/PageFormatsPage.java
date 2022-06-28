@@ -15,6 +15,6 @@ public class PageFormatsPage extends SeleniumWrappers{
 	}
 	
 	@FindBy(css = "input[title='Search for:']") public WebElement searchField;
-	
+	@FindBy(linkText = "Audio post") public WebElement audioPost;
 
 }
