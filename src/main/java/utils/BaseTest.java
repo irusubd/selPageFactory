@@ -16,7 +16,9 @@ public class BaseTest extends Driver {
 	public void setUp() {
 
 		driver = initDriver(browser);
+		Log.info("Started suite on: " + browser);
 		driver.get(url);
+		Log.info("Opened: " + url);
 		app = new BasePage();
 	}
 
@@ -24,6 +26,7 @@ public class BaseTest extends Driver {
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(3000);
 		driver.quit();
+		Log.info("Closed all browser tabs");
 	}
 
 }

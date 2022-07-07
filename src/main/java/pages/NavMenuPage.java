@@ -26,6 +26,7 @@ public class NavMenuPage extends SeleniumWrappers {
 	@FindBy(css = "li[class='menu_user_login']") public WebElement loginPopUp;
 	@FindBy(linkText = "BLOG") public WebElement blogLink;
 	@FindBy(linkText = "Post Formats") public WebElement postFormatsLink;
+	@FindBy(linkText = "EVENTS") public WebElement eventsLink;
 
 	public void navigateTo(WebElement element) {
 		element.click();

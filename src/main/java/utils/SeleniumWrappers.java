@@ -30,6 +30,7 @@ public class SeleniumWrappers {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		Actions action = new Actions(driver);
 		action.moveToElement(element).perform();
+		Log.info("move to element");
 		
 	}
 	
@@ -76,8 +77,8 @@ public class SeleniumWrappers {
 			element.click();
 			
 		} catch (NoSuchElementException e) {
-			//Log.error("...");
-			// retry
+			Log.error("Click method failed");
+			Log.error(e.fillInStackTrace());
 		}
 	}
 }
