@@ -29,6 +29,8 @@ public class ActionsClassTests extends BaseTest{
 		
 		Actions action = new Actions(driver);
 		
+		
+		
 		action.moveToElement(app.postFormatsPage.searchField)
 			.keyDown(Keys.SHIFT)
 			.sendKeys(app.postFormatsPage.searchField,"abracadabra")
